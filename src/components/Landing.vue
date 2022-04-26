@@ -7,9 +7,9 @@
       <span class="spanRight">Espacio Estelar</span>
     </h1>-->
     <div class="section">
-      <div id="copy">
-          <h1>Mauro Dollinger, artista, músico y programador.</h1>
-      </div>
+      <!--  <div id="copy">
+          <h1>Mauro Dollinger, artist and developer from Buenos Aires.</h1>
+      </div>-->
     </div>
   </div>
 </template>

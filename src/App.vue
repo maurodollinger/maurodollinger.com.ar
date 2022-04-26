@@ -7,6 +7,9 @@
         <router-link event to="/" @click.native.prevent="handleOpenModal('/')">/</router-link>
       </div>
       <div>
+        <a href="https://www.fxhash.xyz/u/mdollinger" target="_blank">Gen-Art</a>
+      </div>
+      <div>
         <router-link event to="/gradientes" @click.native.prevent="handleOpenModal('/Gradientes')">Gradientes</router-link>
       </div>
       <div>
@@ -18,10 +21,11 @@
       <div>
         <router-link event to="/espacio" @click.native.prevent="handleOpenModal('/espacio')">Vacío Difuso</router-link>
       </div>
+        <!--
       <div>
         <router-link event to="/visualcode" @click.native.prevent="handleOpenModal('/Visualcode')">Visual Code</router-link>
       </div>
-      <!--
+    
       <div>
         <router-link to="/txt">Txt</router-link>
       </div>-->
@@ -73,9 +77,9 @@ export default {
         return { 
             title: "Mauro Dollinger - Espacio estelar",
             meta: [
-                { name: 'description', content:  'Mauro Dollinger, artista, músico y programador. Espacio estelar es un proyecto realizado en el marco de la tesis en Arte Multimedia de la Universidad Nacional del Arte, Buenos Aires, Argentina.'},
-                { property: 'og:title', content: "Mauro Dollinger, artista, músico y programador. Espacio estelar es un proyecto realizado en el marco de la tesis en Arte Multimedia de la Universidad Nacional del Arte, Buenos Aires, Argentina."},
-                { property: 'og:site_name', content: 'Mauro Dollinger - Espacio estelar'},
+                { name: 'description', content:  'Mauro Dollinger, artista, músico y programador. Buenos Aires, Argentina.'},
+                { property: 'og:title', content: "Mauro Dollinger, artista, músico y programador. Buenos Aires, Argentina."},
+                { property: 'og:site_name', content: 'Mauro Dollinger'},
                 {property: 'og:type', content: 'website'},    
                 {name: 'robots', content: 'index,follow'} 
             ]

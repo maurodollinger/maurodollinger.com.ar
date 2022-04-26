@@ -47,66 +47,6 @@ body{
     top: 0;
     left: 0;
 }
-/*
-.title{
-    position: absolute;
-    font-weight: 300;
-    display: inline-block;
-    text-align: center;
-    @media (min-width: 768px) {
-        font-size: 1.6rem;
-        left:50vw;
-        top:50vh;
-     //   transform: rotate(-90deg);
-    }
-    @media (max-width: 767px) {
-        font-size: 1.5rem;
-        top:30vh;
-        text-align: left;
-    }
-    span{
-        display: inline-block;
-    }
-    .spanLeft{
-        clip-path: inset(0px 0px 0px 0%);
-    }
-    .spanRight{
-        clip-path: inset(0px 0% 0px 0px );
-    }
-    z-index: 10;
-}
-.subtitle{
-    position: absolute;
-    font-weight: 300;
-    display: inline-block;
-    text-align: left;
-    @media (min-width: 768px) {
-        left:30vw;
-        top:60vh;
-        white-space: pre;
-    }
-    @media (max-width: 767px) {
-        bottom:40vh;
-        width: 80vw;
-        display: block;
-    }
-}
-.overTitle{
-    position: absolute;
-    background-color: transparent;
-    width: 25vw;
-    height: 100vh;
-    top:0;
-    left:0;
-}
-.leaveTitle{
-    position: absolute;
-    background-color: transparent;
-    width:10vw;
-    height: 100vh;
-    top:0;
-    left:25vw;
-}*/
 
 .mouseMove{
     position: fixed;
@@ -127,21 +67,6 @@ body{
         visibility: hidden;
     }
   }
-  /*
-#blurredBackground{
-    position: absolute;
-    width:100vw;
-    height: 100vh;
-    top:0;
-    left:0;
-    background-color: rgba($color: (black), $alpha: .7);
-    visibility: hidden;
-    opacity: 0;
-     &.blur + .page{
-        filter: blur(3  px);
-        -webkit-filter: blur(3px);
-     }
-}*/
 
 #copy{
     color: white;
@@ -173,7 +98,7 @@ body{
 
     @media (max-width: 767px) {
         a{
-            font-size: 1.1rem;
+            font-size: 0.6rem;
         }
         display: flex;
         width: 100vw;
