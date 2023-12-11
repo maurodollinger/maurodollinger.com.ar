@@ -19,9 +19,6 @@ body{
     z-index: 5;
     height: 100%;
     width: 100%;
-    &.audio,&.texto{
-      //  overflow-y: scroll;
-    }
 }
 .background{
     height: 100vh;
@@ -225,6 +222,38 @@ body{
 button{
     cursor: pointer;
     margin: 2px;
+}
+
+#frontendcontainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 10vh;
+    @media (min-width: 768px) {
+        padding-left:20vw;
+        padding-right: 20vw;
+    }
+    .item{
+        animation: fadeInAnimation ease-out .5s; 
+        animation-iteration-count: 1; 
+        animation-fill-mode: forwards;    
+        margin-bottom: 50px;
+        h2{
+            margin: 10px 0;
+        }
+        a{
+            display: inline-block;
+            color:white;
+            text-decoration: none;
+            padding-right: 10px;
+        }
+        img{
+            width: 100%;
+            max-width: 700px;
+        }
+    }
 }
 
 #visualContainer{

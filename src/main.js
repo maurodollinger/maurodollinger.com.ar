@@ -10,10 +10,11 @@ import VueMeta from 'vue-meta'
 import Audio from "./components/Audio";
 import Landing from "./components/Landing";
 import Visual from "./components/Visual";
-import Code from "./components/Code";
+//import Code from "./components/Code";
 import Objects from "./components/Objects";
 import Espacio from "./components/Espacio";
-import Texto from "./components/Texto";
+//import Texto from "./components/Texto";
+import Front from './components/Front';
 
 Vue.use(VueMobileDetection);
 Vue.use(Router);
@@ -26,10 +27,11 @@ const routes = [
   { path: '/', component: Landing },
   { path: '/audio', component: Audio },
   { path: '/gradientes', component: Visual },
-  { path: '/visualcode', component: Code },
+  //{ path: '/visualcode', component: Code },
   { path: '/objetos', component: Objects },
   { path: '/espacio', component: Espacio },
-  { path: '/txt', component: Texto }
+  { path: '/frontend', component: Front}
+  //{ path: '/txt', component: Texto }
 ]
 
 const router = new Router({

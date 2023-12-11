@@ -10,6 +10,9 @@
         <a href="https://www.fxhash.xyz/u/mdollinger" target="_blank">Gen-Art</a>
       </div>
       <div>
+        <router-link event to="/frontend" @click.native.prevent="handleOpenModal('/frontend')">Front</router-link>
+      </div>
+      <div>
         <router-link event to="/gradientes" @click.native.prevent="handleOpenModal('/Gradientes')">Gradientes</router-link>
       </div>
       <div>
