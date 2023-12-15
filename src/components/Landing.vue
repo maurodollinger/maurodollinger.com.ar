@@ -1,5 +1,6 @@
 <template>
   <div class="container landing">
+   <ParticleCanvas />
     <div class="section">
       <div id="copy" >
           <h1 class="effect-shine"><span class="big">Mauro Dollinger</span>,<br/> <span class="thin">artist and developer from </span>Buenos Aires.</h1>
@@ -29,6 +30,9 @@
 </template>
 
 <script>
+
+import ParticleCanvas from './ParticleCanvas';
+
 export default {
   name: "Landing",
   methods:{
@@ -36,6 +40,9 @@ export default {
       const link = event.currentTarget.dataset.link;
       this.$router.push(link);
     }
-  }
+  },
+   components: {
+    ParticleCanvas,
+  },
 };
 </script>
