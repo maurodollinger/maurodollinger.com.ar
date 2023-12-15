@@ -1,6 +1,5 @@
 <template>
   <div class="container landing">
-   <ParticleCanvas />
     <div class="section">
       <div id="copy" >
           <h1 class="effect-shine"><span class="big">Mauro Dollinger</span>,<br/> <span class="thin">artist and developer from </span>Buenos Aires.</h1>
@@ -26,6 +25,7 @@
         <div @click="handleNavigation" data-link="/frontend"><span>Front end Projects</span></div>
       </div>
     </div>
+     <ParticleCanvas />
   </div>
 </template>
 

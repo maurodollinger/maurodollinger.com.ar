@@ -23,7 +23,11 @@ export default {
 .breadcrumb {
   margin: 10px 0 20px;
 }
-
+@media screen and (max-width:768px){
+  .breadcrumb ul{
+    justify-content: center;
+  }
+}
 .breadcrumb ul {
   list-style: none;
   padding: 0;
@@ -45,9 +49,10 @@ export default {
   color: white;
   cursor: pointer;
   text-transform: capitalize;
+  transition: color 0.1s ease-in;
 }
 
 .breadcrumb a:hover {
-  text-decoration: underline;
+  color:rgba(256,256,256,0.7);
 }
 </style>

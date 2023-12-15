@@ -26,6 +26,8 @@ body{
     justify-content: center;
 
     .section{
+        position: relative;
+        z-index: 5;
         padding-top: 3rem;
         padding-bottom: 3rem;
         @media screen and (min-width:768px) {
@@ -105,11 +107,26 @@ body{
         h2{
             margin-bottom: 2rem;
         }
+
+        a{
+            color:white;
+            transition: color 0.1 ease-in;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+              color:rgba(256,256,256,0.7);
+            }
+        }
         .genartContainer{
             margin-top: 2rem;
             display: flex;
             flex-wrap: wrap;
-            gap: 4rem;
+            @media screen  and (min-width:768px){
+                gap: 4rem;
+            }
+            @media screen and (max-width:767px){
+                gap: 2rem;
+            }
             justify-content: center;
             li{
                 display: flex;
@@ -267,11 +284,11 @@ body{
                 display: block;
                 margin: 0 10px;
                 background-color: rgba(256,256,256,0.7);
-                border-radius: 0.5rem;;
+                border-radius: 0.8rem;
                 color: #000;
                 text-decoration: none;
                 transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-                padding: 0.2rem 0.4rem;
+                padding: 0.2rem 0.5rem;
                 &:hover{
                     color: #076766;
                     background-color: rgba(256,256,256,0.95);

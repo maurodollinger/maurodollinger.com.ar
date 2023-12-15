@@ -5,6 +5,7 @@
       <div v-if="generativeToken"  ref="listContainer">
         <h2>{{generativeToken.name}}</h2>
           <p><small>{{generativeToken.iterationsCount}} / {{generativeToken.supply}} editions minted</small></p>
+           <p><small><a :href="externalUrl" target="_blank">open on fxhash</a></small></p>
          <ul class="genartContainer">
           <li :key="item.id" v-for="(item, index) in objkts" :ref="`item-${index}`" >
             <p>{{ item.name }}</p>
@@ -64,6 +65,7 @@ export default {
       skip:0,
       take:10,
       loading:false,
+      externalUrl:'',
       breadcrumbItems: [
         { label: "Home", route: "/" },
         { label: "Genart Projects", route: "/genart" },
@@ -102,7 +104,7 @@ export default {
         .then(response => response.json())
         .then(data => {
             this.generativeToken = data.data.generativeToken;
-
+            this.externalUrl = `https://www.fxhash.xyz/generative/${data.data.generativeToken.id}`
             const newItems = this.generativeToken.objkts;
             this.objkts = this.objkts.concat(newItems);
             this.skip += this.take;
