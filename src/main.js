@@ -3,35 +3,27 @@ import App from './App.vue'
 
 import VueMobileDetection from "vue-mobile-detection";
 import Router from "vue-router";
-import VueYouTubeEmbed from 'vue-youtube-embed'
 import VueMeta from 'vue-meta'
 
 
-import Audio from "./components/Audio";
 import Landing from "./components/Landing";
-import Visual from "./components/Visual";
-//import Code from "./components/Code";
-import Objects from "./components/Objects";
-import Espacio from "./components/Espacio";
-//import Texto from "./components/Texto";
 import Front from './components/Front';
+import Genart from './components/Genart';
+import GenartProject from './components/GenartProject';
+import GenartToken from './components/GenartToken';
 
 Vue.use(VueMobileDetection);
 Vue.use(Router);
-Vue.use(VueYouTubeEmbed);
 Vue.use(VueMeta);
 
 Vue.config.productionTip = false
 
 const routes = [
   { path: '/', component: Landing },
-  { path: '/audio', component: Audio },
-  { path: '/gradientes', component: Visual },
-  //{ path: '/visualcode', component: Code },
-  { path: '/objetos', component: Objects },
-  { path: '/espacio', component: Espacio },
-  { path: '/frontend', component: Front}
-  //{ path: '/txt', component: Texto }
+  { path: '/genart', component: Genart },
+  { path: '/frontend', component: Front },
+  { path: '/genart/:projectid', component: GenartProject},
+  { path: '/genart/:projectid/:tokenid', component: GenartToken}
 ]
 
 const router = new Router({

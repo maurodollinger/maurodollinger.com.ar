@@ -1,21 +1,41 @@
 <template>
   <div class="container landing">
-    <div class="overTitle"></div>
-    <div class="leaveTitle"></div>
-   <!-- <h1 class="title">
-      <span class="spanLeft">Mauro Dollinger</span> //
-      <span class="spanRight">Espacio Estelar</span>
-    </h1>-->
     <div class="section">
-      <!--  <div id="copy">
-          <h1>Mauro Dollinger, artist and developer from Buenos Aires.</h1>
-      </div>-->
+      <div id="copy" >
+          <h1 class="effect-shine"><span class="big">Mauro Dollinger</span>,<br/> <span class="thin">artist and developer from </span>Buenos Aires.</h1>
+      </div>
+      <div id="socials">
+        <a target="_blank" href="https://drive.google.com/file/d/193-mP0Y2KskTjDt66m2b7OtwJTIUPrWV/view?usp=sharing">
+          <svg fill="#FFFFFF" width="30px" height="30px" viewBox="0 0 256 256" id="cv" xmlns="http://www.w3.org/2000/svg">
+          <path class="path" stroke="#FFFFFF" stroke-width="4" d="M146.698,166.7522a36,36,0,1,0-37.39551.00024A63.58109,63.58109,0,0,0,76.7998,189.5957a4,4,0,1,0,6.39649,4.80469,56.0083,56.0083,0,0,1,89.60742-.00195,4,4,0,1,0,6.39649-4.80469A63.57867,63.57867,0,0,0,146.698,166.7522ZM100,136a28,28,0,1,1,28,28A28.03146,28.03146,0,0,1,100,136ZM200,28H56A12.01343,12.01343,0,0,0,44,40V216a12.01343,12.01343,0,0,0,12,12H200a12.01343,12.01343,0,0,0,12-12V40A12.01343,12.01343,0,0,0,200,28Zm4,188a4.00427,4.00427,0,0,1-4,4H56a4.00427,4.00427,0,0,1-4-4V40a4.00427,4.00427,0,0,1,4-4H200a4.00427,4.00427,0,0,1,4,4ZM92,64a4.0002,4.0002,0,0,1,4-4h64a4,4,0,0,1,0,8H96A4.0002,4.0002,0,0,1,92,64Z"/>
+        </svg>
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/maurodollinger/">
+          <svg fill="#FFFFFF" width="30px" height="30px" viewBox="0 0 256 256" id="linkedin" xmlns="http://www.w3.org/2000/svg">
+           <path class="path" stroke="#FFFFFF" stroke-width="4" d="M96,80a8,8,0,1,1-8-8A7.99993,7.99993,0,0,1,96,80Zm-8,28.001a4,4,0,0,0-4,4v64a4,4,0,1,0,8,0v-64A4,4,0,0,0,88,108.001Zm60,0a31.92463,31.92463,0,0,0-24,10.86767V112.001a4,4,0,0,0-8,0v64a4,4,0,1,0,8,0v-36a24,24,0,0,1,48,0v36a4,4,0,1,0,8,0v-36A32.03619,32.03619,0,0,0,148,108.001ZM224,44V212a12.01375,12.01375,0,0,1-12,12H44a12.01375,12.01375,0,0,1-12-12V44A12.01359,12.01359,0,0,1,44,32H212A12.01359,12.01359,0,0,1,224,44Zm-8,0a4.00458,4.00458,0,0,0-4-4H44a4.00458,4.00458,0,0,0-4,4V212a4.00458,4.00458,0,0,0,4,4H212a4.00458,4.00458,0,0,0,4-4Z"/>
+        </svg></a>
+        <a target="_blank" href="https://github.com/maurodollinger">
+          <svg fill="#FFFFFF" width="30px" height="30px" viewBox="0 0 256 256" id="github" xmlns="http://www.w3.org/2000/svg">
+          <path class="path" stroke="#FFFFFF" stroke-width="4" d="M216,220a20.02229,20.02229,0,0,1-20-20v-8a28.04258,28.04258,0,0,0-18.9043-26.4751A52.036,52.036,0,0,0,204,120v-8a53.77853,53.77853,0,0,0-8.05859-27.83984A55.766,55.766,0,0,0,191.46387,38,3.99989,3.99989,0,0,0,188,36a55.78079,55.78079,0,0,0-45.96289,24l-28.07422-.001A55.785,55.785,0,0,0,68,36a3.99989,3.99989,0,0,0-3.46387,2,55.766,55.766,0,0,0-4.47754,46.16016A53.77853,53.77853,0,0,0,52,112v8a52.036,52.036,0,0,0,26.9043,45.5249A28.04258,28.04258,0,0,0,60,192v8a20.02229,20.02229,0,0,1-20,20,4,4,0,0,0,0,8,28.03146,28.03146,0,0,0,28-28v-8a20.02229,20.02229,0,0,1,20-20h16v44a20.02229,20.02229,0,0,1-20,20,4,4,0,0,0,0,8,28.03146,28.03146,0,0,0,28-28V172h32v44a28.03146,28.03146,0,0,0,28,28,4,4,0,0,0,0-8,20.02229,20.02229,0,0,1-20-20V172h16a20.02229,20.02229,0,0,1,20,20v8a28.03146,28.03146,0,0,0,28,28,4,4,0,0,0,0-8ZM60,120v-8a45.7282,45.7282,0,0,1,7.70605-24.88965,3.99975,3.99975,0,0,0,.53858-3.84375A47.81139,47.81139,0,0,1,70.3418,44.05569a47.83327,47.83327,0,0,1,38.11474,22.10058A3.9989,3.9989,0,0,0,111.8252,67.999L144.1748,68h0a3.99875,3.99875,0,0,0,3.36866-1.84375A47.83182,47.83182,0,0,1,185.6582,44.05569a47.81139,47.81139,0,0,1,2.09717,39.21093,4.01978,4.01978,0,0,0,.53174,3.835A45.722,45.722,0,0,1,196,112v8a44.04978,44.04978,0,0,1-44,44H104A44.04978,44.04978,0,0,1,60,120Z"/>
+        </svg>
+       </a>
+      </div>
+      <div id="sections">
+        <div @click="handleNavigation" data-link="/genart"><span>Generative Art</span></div>
+        <div @click="handleNavigation" data-link="/frontend"><span>Front end Projects</span></div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Landing"
+  name: "Landing",
+  methods:{
+    handleNavigation(event){
+      const link = event.currentTarget.dataset.link;
+      this.$router.push(link);
+    }
+  }
 };
 </script>
