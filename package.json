@@ -3,27 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "dev": "vite",
+"build": "vite build",
+"serve": "vite preview"
   },
   "dependencies": {
-    "core-js": "^3.6.4",
-    "gsap": "^3.2.6",
-    "vue": "^2.6.11",
-    "vue-fullpage.js": "^0.2.15",
+    "core-js": "^3.47.0",
+    "gsap": "^3.14.2",
+   "vue": "^2.7.16",
+    "vue-fullpage.js": "^0.2.22",
     "vue-meta": "^2.4.0",
-    "vue-mobile-detection": "^1.0.0",
+    "vue-mobile-detection": "^2.0.1",
     "vue-typed-js": "^0.1.2",
     "vue-youtube-embed": "^2.2.2"
   },
   "devDependencies": {
-    "@vue/cli-service": "^5.0.8",
-    "node-sass": "^9.0.0",
-    "sass-loader": "^13.3.2",
-    "vue-router": "^3.3.4",
-    "vue-soundcloud-player": "^1.2.0",
-    "vue-template-compiler": "^2.6.11"
+    "vite": "^4.4.9",
+    "vite-plugin-vue2": "^2.0.3",
+    "vue-template-compiler": "^2.7.16"
   },
   "browserslist": [
     "> 1%",
