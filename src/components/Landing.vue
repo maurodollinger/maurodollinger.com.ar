@@ -2,10 +2,11 @@
   <div class="container landing">
     <div class="section">
       <div id="copy" >
-          <h1 class="effect-shine"><span class="big">Mauro Dollinger</span>,<br/> <span class="thin">artist and developer from </span>Buenos Aires.</h1>
+          <h1 class="effect-shine"><span class="big">Mauro Dollinger</span>,<br/> <span class="thin">Full-Stack developer from </span>Buenos Aires.</h1>
+          <h2 class="effect-shine">Specialized on Front-End and UX</h2>
       </div>
       <div id="socials">
-        <a target="_blank" href="https://drive.google.com/file/d/193-mP0Y2KskTjDt66m2b7OtwJTIUPrWV/view?usp=sharing">
+        <a target="_blank" href="https://docs.google.com/document/d/17LgSKaFkwjn7M2u9fmf9kBsXvtvZlsRs7prEzwkOuNg/edit?usp=sharing">
           <svg fill="#FFFFFF" width="30px" height="30px" viewBox="0 0 256 256" id="cv" xmlns="http://www.w3.org/2000/svg">
           <path class="path" stroke="#FFFFFF" stroke-width="4" d="M146.698,166.7522a36,36,0,1,0-37.39551.00024A63.58109,63.58109,0,0,0,76.7998,189.5957a4,4,0,1,0,6.39649,4.80469,56.0083,56.0083,0,0,1,89.60742-.00195,4,4,0,1,0,6.39649-4.80469A63.57867,63.57867,0,0,0,146.698,166.7522ZM100,136a28,28,0,1,1,28,28A28.03146,28.03146,0,0,1,100,136ZM200,28H56A12.01343,12.01343,0,0,0,44,40V216a12.01343,12.01343,0,0,0,12,12H200a12.01343,12.01343,0,0,0,12-12V40A12.01343,12.01343,0,0,0,200,28Zm4,188a4.00427,4.00427,0,0,1-4,4H56a4.00427,4.00427,0,0,1-4-4V40a4.00427,4.00427,0,0,1,4-4H200a4.00427,4.00427,0,0,1,4,4ZM92,64a4.0002,4.0002,0,0,1,4-4h64a4,4,0,0,1,0,8H96A4.0002,4.0002,0,0,1,92,64Z"/>
         </svg>
@@ -20,10 +21,10 @@
         </svg>
        </a>
       </div>
-      <div id="sections">
+      <!-- <div id="sections">
         <div @click="handleNavigation" data-link="/genart"><span>Generative Art</span></div>
         <div @click="handleNavigation" data-link="/frontend"><span>Front end Projects</span></div>
-      </div>
+      </div> -->
     </div>
      <ParticleCanvas />
   </div>
@@ -31,7 +32,7 @@
 
 <script>
 
-import ParticleCanvas from './ParticleCanvas';
+import ParticleCanvas from './ParticleCanvas.vue';
 
 export default {
   name: "Landing",
@@ -43,6 +44,6 @@ export default {
   },
    components: {
     ParticleCanvas,
-  },
+  }
 };
 </script>
