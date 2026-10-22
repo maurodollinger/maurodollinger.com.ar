@@ -10,8 +10,7 @@
           <p>{{ project.description }}</p>
           <div class="links">
             <a :href="project.liveLink" target="_blank">Live site</a>
-            <a :href="project.githubLink" target="_blank">Github</a>
-          </div>
+            </div>
         </div>
       </div>
     </div>
@@ -23,6 +22,11 @@
 import Breadcrumb from './utils/Breadcrumb.vue';
 import gsap from 'gsap';
 
+import audiophilePreview from '@/assets/img/frontend/audiophile-preview.jpg';
+import devjobsPreview from '@/assets/img/frontend/devjobs-preview.jpg';
+import desktopPreview from '@/assets/img/frontend/desktop-preview.jpg';
+import spacetourismPreview from '@/assets/img/frontend/spacetourism.webp';
+
 export default {
   name: "FrontEnd",
   components:{
@@ -32,37 +36,37 @@ export default {
     return{
       projects:[
         {
-        title: 'Audiophile Ecommerce',
-        image: require('@/assets/img/frontend/audiophile-preview.jpg'),
-        description: 'Responsive ecommerce built with React and Sass',
-        liveLink: 'https://maurodollinger.github.io/audiophile-ecommerce-website/',
-        githubLink: 'https://github.com/maurodollinger/audiophile-ecommerce-website/',
-        showOverlay:true,
-      },
-      {
-        title: 'Devjobs Webapp',
-        image: require('@/assets/img/frontend/devjobs-preview.jpg'),
-        description: 'Responsive website built with React and Sass with Firebase',
-        liveLink: 'https://maurodollinger.github.io/devjobs-web-app/build/',
-        githubLink: 'https://github.com/maurodollinger/devjobs-web-app',
-        showOverlay:true,
-      },
-      {
-        title: 'Interactive Comment Section',
-        image: require('@/assets/img/frontend/desktop-preview.jpg'),
-        description: 'Built with React and Sass with Firebase',
-        liveLink: 'https://maurodollinger.github.io/interactive-comment-section/build/',
-        githubLink: 'https://github.com/maurodollinger/interactive-comment-section',
-        showOverlay:true,
-      },
-      {
-        title: 'Spacetourism',
-        image: require('@/assets/img/frontend/spacetourism.webp'),
-        description: 'Built with React and Sass',
-        liveLink: 'https://maurodollinger.github.io/spacetourism/build/',
-        githubLink: 'https://github.com/maurodollinger/spacetourism',
-        showOverlay:true,
-      }
+          title: 'Audiophile Ecommerce',
+          image: audiophilePreview,
+          description: 'Responsive ecommerce built with React and Sass',
+          liveLink: 'https://maurodollinger.github.io/audiophile-ecommerce-website/',
+          githubLink: 'https://github.com/maurodollinger/audiophile-ecommerce-website/',
+          showOverlay: true,
+        },
+        {
+          title: 'Devjobs Webapp',
+          image: devjobsPreview,
+          description: 'Responsive website built with React and Sass with Firebase',
+          liveLink: 'https://maurodollinger.github.io/devjobs-web-app/build/',
+          githubLink: 'https://github.com/maurodollinger/devjobs-web-app',
+          showOverlay: true,
+        },
+        // {
+        //   title: 'Interactive Comment Section',
+        //   image: desktopPreview,
+        //   description: 'Built with React and Sass with Firebase',
+        //   liveLink: 'https://maurodollinger.github.io/interactive-comment-section/build/',
+        //   githubLink: 'https://github.com/maurodollinger/interactive-comment-section',
+        //   showOverlay: true,
+        // },
+        // {
+        //   title: 'Spacetourism',
+        //   image: spacetourismPreview,
+        //   description: 'Built with React and Sass',
+        //   liveLink: 'https://maurodollinger.github.io/spacetourism/build/',
+        //   githubLink: 'https://github.com/maurodollinger/spacetourism',
+        //   showOverlay: true,
+        // }
       ],
       breadcrumbItems: [
         { label: "Home", route: "/" },

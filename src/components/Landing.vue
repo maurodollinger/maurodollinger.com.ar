@@ -21,10 +21,10 @@
         </svg>
        </a>
       </div>
-      <!-- <div id="sections">
+       <div id="sections">
         <div @click="handleNavigation" data-link="/genart"><span>Generative Art</span></div>
         <div @click="handleNavigation" data-link="/frontend"><span>Front end Projects</span></div>
-      </div> -->
+      </div> 
     </div>
      <ParticleCanvas />
   </div>
@@ -39,7 +39,12 @@ export default {
   methods:{
     handleNavigation(event){
       const link = event.currentTarget.dataset.link;
-      this.$router.push(link);
+      if(link === '/genart'){
+        window.open('https://objkt.com/users/tz1TfDwzin8K55zxWMBxFqNM9cimFYEH7LFA/created?search=fxhash', '_blank');    
+      }
+      else {
+        this.$router.push(link);
+      }
     }
   },
    components: {
